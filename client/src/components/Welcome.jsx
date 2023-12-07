@@ -17,9 +17,15 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 
 const Welcome = () => {
 	const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
+	
 	const connectWallet = () => {
 		console.log('connectWallet')
 	}
+
+	const handleSubmit = () => {
+		console.log('handleSubmit')
+	}
+
 	return (
 		<div className="flex w-full justify-center items-center">
 			<div className="flex md:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
@@ -70,7 +76,7 @@ const Welcome = () => {
               : (
                 <button
                   type="button"
-                  onClick={() => {}}
+                  onClick={handleSubmit}
                   className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
                 >
                   Send now
